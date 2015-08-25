@@ -1,0 +1,9 @@
+#summary OpenCL compiler optimization options
+
+|| -cl-opt-disable || This option disables all optimizations. The default is optimizations are enabled. ||
+|| -cl-strict-aliasing || This option allows the compiler to assume the strictest aliasing rules. ||
+|| -cl-mad-enable || Allow a `*` b + c to be replaced by a mad. ||
+|| -cl-no-signed-zeros || Allow optimizations for floating-point arithmetic that ignore the signedness of zero. ||
+|| -cl-unsafe-math-optimizations || This option includes the –cl-no-signed-zeros and –cl-mad-enable options. ||
+|| -cl-finite-math-only || Allow optimizations for floating-point arithmetic that assume that arguments and results are not NaNs or ±∞. ||
+|| -cl-fast-relaxed-math || Sets the optimization options –cl-finite-math-only and –cl-unsafe-math-optimizations. This option causes the preprocessor macro __FAST_RELAXED_MATH__ to be defined in the OpenCL program. ||

@@ -1,0 +1,15 @@
+#summary Reserved data type
+
+|| booln ||
+|| double, `double`_n_ ||
+|| `half`_n_ ||
+|| quad, `quad`_n_ ||
+|| complex half, `complex half`_n_, imaginary half, `imaginary half`_n_ ||
+|| complex float, `complex float`_n_, imaginary halr, `imaginary half`_n_ ||
+|| complex double, `complex double`_n_, imaginary double, `imaginary double`_n_ ||
+|| complex quad, `complex quad`_n_, imaginary quad, `imaginary quad`_n_ ||
+|| `float`_nxm_ ||
+|| `double`_nxm_ ||
+|| long double, `long double`_n_ ||
+|| long long, `long long`_n_ ||
+|| unsigned long long, ulong long, `ulong long`_n_ ||

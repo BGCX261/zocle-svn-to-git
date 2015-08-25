@@ -1,0 +1,24 @@
+#summary OpenCL memory model
+
+<table style="width:auto;"><tr><td><a href="http://picasaweb.google.com/lh/photo/cYvKOF5dwIagLW35WGehRQ?feat=embedwebsite"><img src="http://lh6.ggpht.com/_e5w2gEy9U-Q/SdiPBM7lAGI/AAAAAAAAAp8/4sqhu7BXG8k/s800/Device%20architecture.jpg" /></a></td></tr><tr><td style="font-family:arial,sans-serif; font-size:11px; text-align:right">From <a href="http://picasaweb.google.com/wei.hu.tw/Zocle?feat=embedwebsite">zocle</a></td></tr></table>
+
+  * Global Memory
+
+This memory region permits read/write access to all work-items in all
+work-groups. Work-items can read from or write to any element of a memory object.
+Reads and writes to global memory may be cached depending on the capabilities of the device.
+
+  * Constant Memory
+
+A region of global memory that remains constant during the
+execution of a kernel. The host allocates and initializes memory objects placed into
+constant memory.
+
+  * Local Memory
+
+A memory region local to a work-group. This memory region can be
+used to allocate variables that are shared by all work-items in that work-group. It may be implemented as dedicated regions of memory on the OpenCL device. Alternatively, the local memory region may be mapped onto sections of the global memory.
+
+  * Private Memory
+
+A region of memory private to a work-item. Variables defined in one work-item's private memory are not visible to another work-item.

@@ -1,0 +1,40 @@
+#summary OpenCL C language built-in functions
+
+  * Work-item functions
+
+|| uint get`_`work`_`dim () ||
+|| size`_`t get`_`global`_`size (uint dimindx) ||
+|| size`_`t get`_`global`_`id (uint dimindx) ||
+|| size`_`t get`_`local`_`size (uint dimindx) ||
+|| size`_`t get`_`local`_`id (uint dimindx) ||
+|| size`_`t get`_`num`_`groups (uint dimindx) ||
+|| size`_`t get`_`group`_`id (uint dimindx) ||
+
+  * Math functions
+  * Integer functions
+  * Common functions
+  * Geometric functions
+
+|| float4 cross (float4 p0, float4 p1) ||
+|| float dot (gentype p0, gentype p1) ||
+|| float distance (gentype p0, gentype p1) ||
+|| float length (gentype p) ||
+|| gentype normalize (gentype p) ||
+|| float fast`_`distance (gentype p0, gentype p1) ||
+|| float fast`_`length (gentype p) ||
+|| gentype fast`_`normalize (gentype p) ||
+
+  * Relational functions
+  * Vector data load/store functions
+  * Image read/write functions
+  * Synchronization functions
+
+|| void barrier (cl`_`mem`_`fence`_`flags flags) ||
+
+  * Explicit memory fence functions
+
+|| void mem`_`fence (cl`_`mem`_`fence`_`flags flags) ||
+|| void read`_`mem`_`fence (cl`_`mem`_`fence`_`flags flags) ||
+|| void write`_`mem`_`fence (cl`_`mem`_`fence`_`flags flags) ||
+
+  * Async copies from global to local memory, local to global memory, and prefetch functions

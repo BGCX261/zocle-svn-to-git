@@ -1,0 +1,2 @@
+SRCS = \
+cstring.c

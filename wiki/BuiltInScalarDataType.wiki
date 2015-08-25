@@ -1,0 +1,19 @@
+#summary Built-in scalar data type
+
+|| Type in OpenCL Language || API type for application || size in bytes ||
+|| bool || n/a || implementation-defined ||
+|| char || cl_char || 1 byte ||
+|| unsigned char, uchar || cl_uchar || 1 byte ||
+|| short || cl_short || 2 byte2 ||
+|| unsigned short, ushort || cl_ushort || 2 bytes ||
+|| int || cl_int || 4 bytes ||
+|| unsigned int, uint || cl_uint || 4 bytes ||
+|| long || cl_long || 8 bytes ||
+|| unsigned long, ulong || cl_ulong || 8 bytes ||
+|| float || cl_float || 4 bytes ||
+|| half || cl_half || ||
+|| size_t || n/a || implementation-defined ||
+|| ptrdiff_t || n/a || implementation-defined ||
+|| intptr_t || n/a || implementation-defined ||
+|| uintptr_t || n/a || implementation-defined ||
+|| void || void || ||

@@ -1,0 +1,19 @@
+#summary OpenCL C language operators
+
+|| Binary operators: +, -, `*`, / || ||
+|| % || operates on builtin integer scalar and integer vector data types only. ||
+|| Unary operators: +, - || ||
+|| post-, pre-increment, decrement: ++, -- || Do no apply to the built-in scalar and vector *float* types ||
+|| <, >, <=, >= || ||
+|| ==, != || ||
+|| bitwise operators: &, |, `^`, ~ || Do no apply to the built-in scalar and vector *float* types ||
+|| logical binary operators: &&, || Do no apply to the built-in scalar and vector *float* types ||
+|| logical unary operator: ! || Do no apply to the built-in scalar and vector *float* types ||
+|| ternary selection operator: ?: || ||
+|| `~`, >>, <<  || Do no apply to the built-in scalar and vector *float* types ||
+|| sizeof() || ||
+|| , || ||
+|| unary operator: *, & || ||
+|| = || ||
+|| +=, -=, `*`=, /=, %=, <<=, >>=, &=, |=, ^= || ||
+|| array subscript operator: `[``]` || ||

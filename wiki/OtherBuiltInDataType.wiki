@@ -1,0 +1,6 @@
+#summary Other built-in data type
+
+|| image2d_t ||
+|| image3d_t ||
+|| sampler_t ||
+|| event_t ||

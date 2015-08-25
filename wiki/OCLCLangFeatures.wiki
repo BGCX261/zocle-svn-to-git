@@ -1,0 +1,34 @@
+#summary OpenCL C programming language features
+
+|| const || This qualifier cannot be used with image2d_t and image3d_t type. ||
+|| restrict || This qualifier cannot be used with image2d_t and image3d_t type. Types other than pointer types shall not use the restrict qualifier. ||
+|| volatile || This qualifier cannot be used with image2d_t and image3d_t type. ||
+|| Vector literals || Ex: {{{ float4 f = (float4)(1.0f, 2.0f, 3.0f, 4.0f); }}} ||
+|| Vector components || Like OpenGL shading language. Ex: {{{ c.xy = (float2)(3.0f, 4.0f); }}} ||
+|| Vector indices || Ex: {{{ a.xyzw = f.s0123; }}} ||
+|| .odd, .even || ||
+|| .hi, .lo || ||
+|| convert`_`<dest type name>(srctype) || ||
+|| destType convert`_`destType`<``_`sat`>``<``_`roundingMode`>`(sourceType) || Scalar version ||
+|| destTypen convert_destTypen`<``_`sat`>``<``_`roundingMode`>`(sourceTypen) || Vector version ||
+|| Floating-point rounding mode || `_`rte, `_`rtz, `_`rtp, `_`rtn ||
+|| Reinterpreting types using Unions || ||
+|| as`_``<`destType`>`() || Scalar version ||
+|| as`_``<`destType`>`_n_() || Vector version ||
+|| Address space qualifier || `_``_`global, `_``_`local, `_``_`constant, `_``_`private ||
+|| Image access qualifier || `_``_`read`_`only, `_``_`write`_`only ||
+|| Function qualifiers || `_``_`kernel ||
+|| `_``_`attribute`_``_`((vec`_`type`_`hint(`<``type`_n_`>`))) || ||
+|| `_``_`attribute`_``_`((work`_`group`_`size`_`hint(X, Y, Z))) || ||
+|| `_``_`attribute`_``_`((reqd`_`group`_`size`_`hint(X, Y, Z))) || ||
+
+  * preprocessor relative
+
+|| #pragma ||
+|| `_``_`FILE`_``_` ||
+|| `_``_`LINE`_``_` ||
+|| `_``_`OPENCL`_`VERSION`_``_` ||
+|| `_``_`ENDIAN`_`LITTLE`_``_` ||
+|| `_``_`ROUNDING_MODE`_``_` ||
+|| `_``_`IMAGE`_`SUPPORT`_``_` ||
+|| `_``_`FAST`_`RELAXED`_`MATH`_``_` ||

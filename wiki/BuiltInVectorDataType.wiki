@@ -1,0 +1,14 @@
+#summary Built-in vector data type
+
+|| Type in OpenCL Language || API type for application ||
+|| `char`_n_ || `cl_char`_n_ ||
+|| `uchar`_n_ || `cl_uchar`_n_ ||
+|| `short`_n_ || `cl_short`_n_ ||
+|| `ushort`_n_ || `cl_ushort`_n_ ||
+|| `int`_n_ || `cl_int`_n_ ||
+|| `uint`_n_ || `cl_uint`_n_ ||
+|| `long`_n_ || `cl_long`_n_ ||
+|| `ulong`_n_ || `cl_ulong`_n_ ||
+|| `float`_n_ || `cl_float`_n_ ||
+
+Supported values of n are 2, 4, 8, and 16.

@@ -1,0 +1,15 @@
+#summary OpenCL C language unsupported features
+
+|| bit-fields || ||
+|| Variable length arrays || ||
+|| structures with flexible (or unsized) arrays || ||
+|| Variadic macros and functions || ||
+|| storage-class specifiers || extern, static, auto, register ||
+|| predefined identifiers || `_``_`func`_``_` ||
+|| Recursion || ||
+|| C99 library functions || assert.h, ctype.h, complex.h, errno.h, fenv.h, float.h, inttypes.h, limits.h, locale.h, setjmp.h, signal.h, setarg.h, stdio.h, stdlib.h, string.h, tgmath.h, time.h, wchar.h, wctype.h ||
+
+  * Writes to a pointer (or arrays) of built-in types that are less than 32-bits in size (ex: char, uchar, char2, uchar2, short, ushort, and half) or to elements of a struct that are of built-in types that are less than 32-bits in size (ex: char, uchar, char2, uchar2, short and ushort) are not supported.
+
+  * Arguments to __kernel functions in a program cannot be declared with the built-in
+scalar types *bool, half, size_t, ptrdiff_t, intptr_t, and uintptr_t*.

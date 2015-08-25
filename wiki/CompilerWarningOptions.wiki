@@ -1,0 +1,4 @@
+#summary OpenCL compiler options to request or suppress warnings
+
+|| -w || Inhibit all warning messages. ||
+|| -Werror || Make all warnings into errors. ||

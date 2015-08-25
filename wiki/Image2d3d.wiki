@@ -1,0 +1,6 @@
+#summary OpenCL C language image2d_t & image3d_t data type
+
+  * These *can only* be specified as arguments to a function.
+  * *cannot* be declared in a struct.
+  * *cannot* be used to declare local variables or as the return type of a function.
+  * A image2d_t or image3d_t argument to a function *cannot* be modified.
